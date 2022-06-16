@@ -4,6 +4,7 @@ class Menu:
         self.price=[]
         #menu.txt 를 읽어서, name, price  로 분리한후
         #self.name , self.price 에 추가하고 close
+    def read(self):
         f = open('d:/temp/menu.txt', mode='r', encoding='utf-8')
         lines = f.readlines()
         for row in lines:
