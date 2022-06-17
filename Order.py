@@ -4,7 +4,7 @@ class Order:
         self.qty=[]
         self.price=[]
     def add(self, menu_no, qty, price):
-        self.menu_no.append(menu_no)
+        self.menu_no.append(menu_no-1)
         self.qty.append(qty)
         self.price.append(price*qty)
 
