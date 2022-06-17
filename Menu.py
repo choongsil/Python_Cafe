@@ -23,13 +23,13 @@ class Menu:
         self.save()
 
     def update(self, ndx, name, price):
-        self.name[ndx]=name
-        self.price[ndx]=str(price)
+        self.name[ndx-1]=name
+        self.price[ndx-1]=str(price)
         self.save()
 
     def delete(self, ndx):
-        del self.name[ndx]
-        del self.price[ndx]
+        del self.name[ndx-1]
+        del self.price[ndx-1]
         self.save()
 
     def save(self):
